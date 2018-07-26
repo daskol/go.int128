@@ -6,7 +6,7 @@ TEXT ·Add(SB),NOSPLIT,$0
 	MOVQ 	a+0(FP), AX
 	MOVQ 	a+8(FP), BX
 	ADDQ 	b+16(FP), AX
-	ADDQ 	b+24(FP), BX
+	ADCQ 	b+24(FP), BX
 	MOVQ 	AX, z+32(FP)
 	MOVQ 	BX, z+40(FP)
 	RET
